@@ -25,10 +25,10 @@ a:hover {
 
 #header {
     font-size: 3em;
+    line-height: 1em;
     font-family: 'Sans-Serif', 'Helvetica', 'Arial';
     color: #54606B;
     border-bottom: 1px solid #d5d5d5;
-    padding: 1em;
 }
 
 
