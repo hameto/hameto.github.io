@@ -1,6 +1,7 @@
 body {
     margin: 60px auto;
-    width: 50%;
+    width: 70%;
+    font-family:'Sans-Serif', 'Helvetica', 'Arial';
 }
 nav ul, footer ul {
     font-family:'Sans-Serif', 'Helvetica', 'Arial';
@@ -22,6 +23,7 @@ a:hover {
 
 #header {
     font-size: 3em;
+    line-height: 4em;
     font-family: 'Sans-Serif', 'Helvetica', 'Arial';
     color: #54606B;
     border-bottom: 1px solid #d5d5d5;
