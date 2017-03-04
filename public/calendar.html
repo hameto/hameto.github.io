@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>2017 Calendar</title>
+		<link rel="stylesheet" type="text/css" href="/css/main.css">
+
+		<script google-analytics>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+		  ga('create', 'UA-89344231-1', 'auto');
+		  ga('send', 'pageview');
+		</script>
+	</head>
+	
+	<body>
+		<div id="header">
+			You ready to tackle 2017?
+		</div>
+
+		<div class="container">
+
+			<img src= "/hbcal2016.png" alt="image of 2016 calendar" style="width:65%; padding:2%">			
+
+    		<div class="blurb">
+				<h2>Goodbye 2016, Hello 2017</h2>
+				<p>Learn more about the project <a href="https://www.facebook.com/notes/hameto-benkreira/my365-calendar-project/10154822699434318" target="_blank">here</a>
+				<br>	
+				<h4>Want a calendar? Here's how to get one --</h4>
+				<h4>1) Submit your order <a href="http://bit.ly/my365cal" target="_blank">here</a></h4>
+				<p><h4>2) Pay for your calendar</h4>
+					<p>($15 for digital, $40 for printed + mailed)</p>
+					<!-- <p> - <a href="http://venmo.com/hameto-benkreira" target="_blank">Venmo</a>
+					<p> - <a href="http://cash.me/$Hameto" target="_blank">Square Cash</a> -->
+
+
+				<!-- Implementing Stripe Checkout -->
+				<form action="/charge" method="POST">
+					<script
+					  src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+					  data-key="pk_test_DQHFek6Gi3KIRB0xE41CJaBU"
+					  data-amount="4000"
+					  data-zip-code="true"
+					  data-name="My365"
+					  data-description="Custom Calendar"
+					  data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+					  data-locale="auto">
+					</script>
+				    <input name="amount" value="4000" type="hidden">
+				    <input name="description" value="YOUR_DESCRIPTION" type="hidden">
+				 	<input name="metadata" value="Order1234" type="hidden">
+				</form>
+
+
+				<p><h4>3) Customize your calendar</h4>
+				<p>You can customize your calendar <a href="http://bit.ly/my365calpersonalize" target="_blank">here</a>. I'll build it after I receive payment for the order. Thanks!
+
+				<h6>// Need help? <a href="mailto:ham3to@gmail.com">Say hello</a></h6>
+				<h6>// PS, I'm not a developer. Bear with my 1990s website while I learn css.</h6>
+
+    		</div><!-- /.blurb -->
+		</div><!-- /.container -->
+		<footer>
+    		<ul>
+        		<li><a href="mailto:abenkreira@gmail.com">email</a></li>
+        		<li><a href="http://www.twitter.com/hameto_" target="_blank">twitter</a></li>
+        		<li><a href="http://www.instagram.com/hameto_" target="_blank">insta</a></li>
+        		<li><a href="http://www.linkedin.com/in/abenkreira" target="_blank">cv</a></li>
+        		<!-- <li><a href="https://github.com/hameto">Github</a></li> -->
+			</ul>
+		</footer>
+	</body>
+</html>
