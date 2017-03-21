@@ -51,7 +51,6 @@ app.post("/charge", (req, res) => {
 
 });
 
-
-
-console.log('Express+Node are now running on localhost:' + PORT);
+//console.log('Express+Node are now running on localhost:' + PORT);
 app.listen(PORT);
+
