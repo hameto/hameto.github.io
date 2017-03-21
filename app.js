@@ -8,7 +8,7 @@ const express = require('express');
 const app = express();
 const stripe = require("stripe")(keySecret);
 const path = require('path');
-var PORT = process.env.PORT || 3000;
+var port = process.env.port || 3000;
     
 const bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({extended: true}));
@@ -52,5 +52,5 @@ app.post("/charge", (req, res) => {
 });
 
 //console.log('Express+Node are now running on localhost:' + PORT);
-app.listen(PORT);
+app.listen(port);
 
